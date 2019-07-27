@@ -21,4 +21,4 @@ known_faces = [
 results = face_recognition.compare_faces(known_faces, unknown_face_encoding)
 
 print("Is this image of Josh? {}".format(results[0]))
-print("Is the unknown face a new person that we've never seen before? {}".format(not True in results))
+print("Is this image of Josh? {}".format(results[1]))
